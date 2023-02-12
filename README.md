@@ -21,6 +21,6 @@ enhancements:
   interrupt effectively de-asserts _CTS_, which will cause the sender to
   pause transmitting until the interrupt has been serviced.
 
-This board is 99.9% the work of Kris Seula (MyGeekyHobby.com).  All I did
+This board is 99.9% the work of Kris Sekula (MyGeekyHobby.com).  All I did
 was add the hardware flow control modification.  Kudos to Kris for publishing
 his idea [here](https://github.com/Kris-Sekula/NABU/tree/main/RS422Alternative).
