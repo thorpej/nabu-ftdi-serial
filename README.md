@@ -21,6 +21,24 @@ enhancements:
   interrupt effectively de-asserts _CTS_, which will cause the sender to
   pause transmitting until the interrupt has been serviced.
 
+To build this board you're oging to need an FTDI USB -> serial interface
+chip mounted on some sort of break-out board.  The board provides 2
+footprints to provide some flexibility.
+
+The first footprint is for a 6-pin right-angle pin header that is meant
+for an Adafruit 6-pin female FTDI connector.  Such a connector can be
+found on the (Adafruit FTDI Friend)[https://www.adafruit.com/product/284],
+the (Adafruit FTDI Serial TTL-232 Cable)[https://www.adafruit.com/product/70],
+or the (Adafruit FTDI Serial TTL-232 USB Type C 5V Cable)[https://www.adafruit.com/product/4364].
+There are other cables out there with a compatible 6-pin connector,
+but I specifically referenced the pin configuration of the Adafruit
+products.
+
+The other option is one of the FTDI FT232RL boards that are all over
+Ali Express.  I ordered (this one)[https://www.aliexpress.us/item/2251832463833524.html],
+but there are lots of identical boards floating around.
+
 This board is 99.9% the work of Kris Sekula (MyGeekyHobby.com).  All I did
 was add the hardware flow control modification.  Kudos to Kris for publishing
 his idea [here](https://github.com/Kris-Sekula/NABU/tree/main/RS422Alternative).
+
